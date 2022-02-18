@@ -23492,7 +23492,8 @@ __webpack_require__.r(__webpack_exports__);
       var payload = {
         role_name: this.Role,
         worker_name: this.Worker
-      };
+      }; //ye kis liye hai 
+
       axios.post('/api/product/create', payload).then(function (response) {
         if (response.status === 200) {
           _this3.$inertia.get('result');

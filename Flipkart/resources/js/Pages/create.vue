@@ -59,6 +59,7 @@
                      role_name:this.Role,
                     worker_name:this.Worker,
                 }
+                //ye kis liye hai 
                 axios.post('/api/product/create', payload).then(response =>{
                     if(response.status === 200){
                         this.$inertia.get('result');
